@@ -1,0 +1,39 @@
+.profile-card {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  background-color: #303030;
+  color: white;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.profile-card form {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-card button {
+  background-color: #e50914;
+  color: white;
+  width: 100px;
+  height: 50px;
+  padding: 7px;
+}
+
+.profile-card mat-icon {
+  font-size: 17px;
+  margin: 0;
+}
+
+.profile-card-content {
+  margin-top: 20px;
+}
+
+.profile-actions {
+  padding: 0 16px 16px 16px;
+  justify-content: space-around;
+}

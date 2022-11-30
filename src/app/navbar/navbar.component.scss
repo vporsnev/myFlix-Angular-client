@@ -1,0 +1,25 @@
+.nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  z-index: 99999999;
+  align-items: center;
+}
+
+.profile-btn {
+  background-color: inherit;
+  border: 0;
+  color: red;
+  cursor: pointer;
+  padding: 0;
+}
+
+.profile-icon {
+  width: 50px;
+  height: 50px;
+  font-size: 50px;
+  margin: 20px 50px 0 0;
+}

@@ -1,0 +1,58 @@
+<app-navbar></app-navbar>
+<div class="movie-card-view">
+  <mat-card *ngFor="let movie of movies" class="movie-card">
+    <img
+      class="movie-image"
+      src="{{ movie.imageURL }}"
+      alt="{{ movie.title }}"
+    />
+    <h2 class="movie-card-title">
+      {{ movie.title }}
+    </h2>
+    <div class="movie-card-info">
+      <h4>{{ movie.year }}</h4>
+      <button
+        class="text-btn"
+        (click)="openGenreView(movie.genre.name, movie.genre.description)"
+      >
+        {{ movie.genre.name }}
+      </button>
+      <button class="fav-icon">
+        <mat-icon
+          class="fav-icon-a"
+          *ngIf="!isFavorite(movie._id)"
+          (click)="addToFavorites(movie._id)"
+          >favorite_border</mat-icon
+        >
+        <mat-icon
+          class="fav-icon-b"
+          *ngIf="isFavorite(movie._id)"
+          (click)="removeFromFavorites(movie._id)"
+          >favorite</mat-icon
+        >
+      </button>
+      <div
+        class="more-btn tooltip"
+        (click)="
+          openMovieViewDialog(
+            movie.title,
+            movie.imageURL,
+            movie.year,
+            movie.genre.name,
+            movie.genre.description,
+            movie.director.name,
+            movie.director.bio,
+            movie.director.birth,
+            movie.description
+          )
+        "
+      >
+        <mat-icon>more_horiz</mat-icon>
+        <div class="top">
+          <p>More details</p>
+          <i></i>
+        </div>
+      </div>
+    </div>
+  </mat-card>
+</div>

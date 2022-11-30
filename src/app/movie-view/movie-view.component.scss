@@ -1,0 +1,70 @@
+.view-dialog {
+  background-color: #303030;
+  color: white;
+}
+
+.view-actions {
+  display: flex;
+  min-height: 40px;
+  justify-content: flex-end;
+  padding: 0;
+}
+
+.view-close-button {
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.view-dialog-title {
+  display: flex;
+  justify-content: center;
+}
+
+.movie-name {
+  width: 150px;
+  font-size: 35px;
+  font-weight: 200;
+  text-align: left;
+  line-height: 45px;
+  margin: auto 0 auto 0;
+}
+
+.movie-view-image {
+  height: 300px;
+  object-fit: contain;
+  margin-right: 10px;
+  border-radius: 3px;
+}
+
+.text-btn {
+  font-size: 15px;
+  background-color: inherit;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  color: rgb(230, 230, 230);
+  text-decoration: underline;
+}
+
+.text-btn:hover {
+  color: white;
+}
+
+.desc {
+  margin-top: 10px;
+}
+
+.view-dialog-content {
+  padding: 10px 20px 40px 20px;
+  color: rgb(230, 230, 230);
+}
+
+.view-dialog-content h4,
+.view-dialog-content p {
+  display: inline;
+}
+
+.view-dialog-content h4 {
+  line-height: 25px;
+  margin-right: 5px;
+}

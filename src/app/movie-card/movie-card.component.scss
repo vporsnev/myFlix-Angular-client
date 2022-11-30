@@ -1,0 +1,110 @@
+.movie-card-view {
+  display: flex;
+  margin: 140px 20px 0 20px;
+}
+
+.movie-card {
+  flex: 1 1 auto;
+  margin-right: 30px;
+  width: 250px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 5px;
+  background-color: #303030;
+  color: rgb(230, 230, 230);
+}
+
+.movie-card:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.movie-card-info {
+  margin: 15px;
+  display: inline;
+}
+
+.movie-card-info button,
+.movie-card-info h4 {
+  display: inline;
+}
+
+.movie-card-info button {
+  font-size: 15px;
+  background-color: inherit;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  margin-left: 20px;
+  vertical-align: middle;
+  color: rgb(230, 230, 230);
+}
+
+.movie-card-info button:hover,
+.movie-card-info .more-btn:hover {
+  color: white;
+}
+
+.movie-card-title {
+  height: 60px;
+  margin: 15px 20px 0 15px;
+  font-weight: 400;
+}
+
+.movie-image {
+  height: 300px;
+  width: 250px;
+  object-fit: cover;
+  border-radius: 5px 5px 0 0;
+}
+
+.tooltip {
+  display: inline-block;
+  position: relative;
+  left: 25px;
+  top: 5px;
+  cursor: pointer;
+}
+
+.tooltip .top {
+  min-width: 100px;
+  top: -5px;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  padding: 10px;
+  color: rgb(230, 230, 230);
+  background-color: #303030;
+  font-weight: normal;
+  font-size: 13px;
+  border-radius: 8px;
+  position: absolute;
+  z-index: 99999999;
+  box-sizing: border-box;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
+  display: none;
+}
+
+.tooltip:hover .top {
+  display: block;
+}
+
+.tooltip .top i {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -12px;
+  width: 24px;
+  height: 12px;
+  overflow: hidden;
+}
+
+.tooltip .top i::after {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  background-color: #303030;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
+}

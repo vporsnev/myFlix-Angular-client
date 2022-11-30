@@ -1,0 +1,43 @@
+<mat-card class="view-dialog">
+  <mat-card-actions class="view-actions">
+    <mat-icon
+      class="view-close-button"
+      aria-label="Close the description"
+      mat-dialog-close
+      >close</mat-icon
+    >
+  </mat-card-actions>
+  <mat-card-title class="view-dialog-title">
+    <img
+      class="movie-view-image"
+      src="{{ data.Image }}"
+      alt="{{ data.Title }}"
+    />
+    <h1 class="movie-name">{{ data.Title }}</h1>
+  </mat-card-title>
+  <br />
+  <mat-dialog-content class="view-dialog-content">
+    <h4>Year:</h4>
+    <p>{{ data.Year }}</p>
+    <br />
+    <h4>Genre:</h4>
+    <button
+      class="text-btn"
+      (click)="openGenreView(data.Genre, data.GenreDescription)"
+    >
+      {{ data.Genre }}
+    </button>
+    <br />
+    <h4>Director:</h4>
+    <button
+      class="text-btn"
+      (click)="
+        openDirectorView(data.Director, data.DirectorBio, data.DirectorBirth)
+      "
+    >
+      {{ data.Director }}
+    </button>
+    <br />
+    <p class="desc">{{ data.Description }}</p>
+  </mat-dialog-content>
+</mat-card>

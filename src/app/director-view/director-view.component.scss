@@ -1,0 +1,26 @@
+.director-dialog {
+  background-color: #303030;
+  color: white;
+}
+
+.director-dialog-content {
+  color: white;
+  padding: 10px 20px 40px 20px;
+}
+
+.view-actions {
+  display: flex;
+  min-height: 40px;
+  justify-content: flex-end;
+  padding: 0;
+}
+
+.view-close-button {
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.director-dialog-title {
+  font-size: 35px;
+  margin-left: 20px;
+}

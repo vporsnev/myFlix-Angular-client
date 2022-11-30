@@ -1,0 +1,25 @@
+.main-page {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.main-page h1 {
+  font-size: 70px;
+  color: rgb(230, 230, 230);
+}
+
+.main-page button {
+  font-size: 20px;
+  color: rgb(230, 230, 230);
+  width: 150px;
+  height: 70px;
+  background-color: #e50914;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+}
