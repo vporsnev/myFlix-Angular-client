@@ -41,6 +41,10 @@ export class MovieCardComponent {
     });
   }
 
+  /**
+   * Adding to favorites
+   */
+
   isFavorite(id: string): boolean {
     return this.favorites.includes(id);
   }
@@ -56,6 +60,10 @@ export class MovieCardComponent {
     });
   }
 
+  /**
+   * Removing to favorites
+   */
+
   removeFromFavorites(id: string): void {
     console.log(id);
     this.fetchApiData.removeFavoriteMovie(id).subscribe((result) => {
@@ -66,6 +74,10 @@ export class MovieCardComponent {
       this.ngOnInit();
     });
   }
+
+  /**
+   * Opens movie view dialog with movie information
+   */
 
   openMovieViewDialog(
     title: string,
@@ -94,6 +106,10 @@ export class MovieCardComponent {
       width: '600px',
     });
   }
+
+  /**
+   * Opens genre information
+   */
 
   openGenreView(name: string, description: string): void {
     this.dialog.open(GenreViewComponent, {

@@ -30,6 +30,10 @@ export class ProfileViewComponent implements OnInit {
     this.getUserInfo();
   }
 
+  /**
+   * Gets user data from api call and sets the user variable to returned JSON file
+   */
+
   getUserInfo(): void {
     this.fetchApiData.getUser().subscribe((resp: any) => {
       this.user = resp;
@@ -41,6 +45,10 @@ export class ProfileViewComponent implements OnInit {
       return this.user;
     });
   }
+
+  /**
+   * Update user's information
+   */
 
   updateUserInfo(): void {
     this.fetchApiData.editUser(this.updatedUser).subscribe((result) => {
@@ -62,6 +70,10 @@ export class ProfileViewComponent implements OnInit {
     });
   }
 
+  /**
+   * Deletes the user's account, redirects to welcome screen
+   */
+
   deleteAccount(): void {
     if (confirm('Delete your account?')) {
       this.router.navigate(['welcome']).then(() => {
@@ -76,9 +88,17 @@ export class ProfileViewComponent implements OnInit {
     }
   }
 
+  /**
+   * Redirects to main movies pages
+   */
+
   toMovies(): void {
     this.router.navigate(['movies']);
   }
+
+  /**
+   * User logout and redirection to welcome page
+   */
 
   logout(): void {
     this.router.navigate(['welcome']);

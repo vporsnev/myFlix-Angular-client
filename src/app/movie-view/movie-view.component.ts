@@ -28,6 +28,10 @@ export class MovieViewComponent implements OnInit {
 
   ngOnInit(): void {}
 
+  /**
+   * Opens genre information
+   */
+
   openGenreView(name: string, description: string): void {
     this.dialog.open(GenreViewComponent, {
       data: {
@@ -36,6 +40,10 @@ export class MovieViewComponent implements OnInit {
       },
     });
   }
+
+  /**
+   * Opens director information
+   */
 
   openDirectorView(name: string, bio: string, birth: string): void {
     this.dialog.open(DirectorViewComponent, {
