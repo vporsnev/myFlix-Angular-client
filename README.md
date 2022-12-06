@@ -15,6 +15,7 @@ The client-side for an application called myFlix built with Angular and based on
 ● Upon clicking on a particular movie, users are taken to a single movie view, where additional movie details are displayed. The single movie view contains the following additional features: 
 
 ○ A button that when clicked takes a user to the director view, where details about the director of that particular movie are displayed. 
+
 ○ A button that when clicked takes a user to the genre view, where details about that particular genre of the movie are displayed.
 
 ● A profile view button which when user clicks, can see, edit and delete profile, log out or come back to movie list.
