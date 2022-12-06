@@ -1,6 +1,6 @@
 # MyFlixAngularClient
 
-
+![This is a screenshot of the login](login.png) ![This is a screenshot of the login](list.png) ![This is a screenshot of the login](genre.png) ![This is a screenshot of the login](profile.png)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.1.
 
